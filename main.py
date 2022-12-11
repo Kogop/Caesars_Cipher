@@ -16,7 +16,7 @@ if __name__ == '__main__':
         else:
             itog += i
 print("Zawivrovannoe message ->", itog)
-
+TempItog = '%s' % itog
 check = 0
 for t in range(1, 32):
     f = open('russian.txt', 'r')
@@ -28,7 +28,7 @@ for t in range(1, 32):
             break
 
     if check == 0:
-        TempItog = '%s' % itog
+
         itog = ''
         for i in TempItog:
             mesto = alfavit_RU.find(i)
